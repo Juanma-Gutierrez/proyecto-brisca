@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --color-primary: #0f360b;
+    --color-primary-contrast: #d9fff8;
+    --color-secondary: #0c1b33;
+    --color-secondary-contrast: #d9fff8;
+    --color-warning: #e2c044;
+    --color-warning-contrast: #0f360b;
+    --color-danger: #a50104;
+    --color-danger-contrast: #d9fff8;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 1px solid #ff000055;
+}
+
+body {
+    font-family: Raleway;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+}
+
+.centered {
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.horizontal {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fullY {
+    height: 100vh;
+}
+
+.fullX {
+    width: 100vw;
+}
+
+.button {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: var(--color-secondary);
+    color: var(--color-secondary-contrast);
+    box-shadow: inset 0px 0px var(--color-secondary-contrast);
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: var(--color-secondary-contrast);
+    color: var(--color-secondary);
+    box-shadow: inset 100px 0px var(--color-secondary-contrast);
+}
+
+h2 {
+    margin: 20px 0px;
+}
+
+h3 {
+    margin: 10px 0px;
+}
+
+li {
+    margin: 0px 20px;
+}
+
+p {
+    margin: 5px 0px;
+}

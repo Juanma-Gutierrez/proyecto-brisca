@@ -3,19 +3,20 @@ import="modelos.*"%>
 
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
-
-    <title>Brisca</title>
-  </head>
-  <body>
-    <h1>juego de la brisca</h1>
-    <% Deck deck = new Deck(); deck.createDeck(); out.print(deck);%>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>Brisca</title>
+    </head>
+    <body>
+        <div class="container centered fullX fullY vertical">
+            <h1>JUEGO DE LA BRISCA</h1>
+            <form action="partida.jsp" method="POST">
+                <input type="submit" value="JUGAR" class="button"/>
+            </form>
+            <a href="instrucciones.jsp"><button class="button">Instrucciones</button></a>
+        </div>
+    </body>
 </html>
