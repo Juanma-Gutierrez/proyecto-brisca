@@ -15,7 +15,7 @@ import="modelos.*"%>
     <title>Brisca</title>
   </head>
   <body>
-    <h1>juego de la brisca</h1>
+    <h1>juego de la Brisca</h1>
     <% Deck deck = new Deck(); deck.createDeck(); out.print(deck);%>
   </body>
 </html>
