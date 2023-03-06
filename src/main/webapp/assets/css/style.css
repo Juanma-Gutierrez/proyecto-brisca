@@ -1,89 +1,483 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 
 :root {
-    --color-primary: #0f360b;
-    --color-primary-contrast: #d9fff8;
-    --color-secondary: #0c1b33;
-    --color-secondary-contrast: #d9fff8;
-    --color-warning: #e2c044;
-    --color-warning-contrast: #0f360b;
-    --color-danger: #a50104;
-    --color-danger-contrast: #d9fff8;
+  --color-primary: #0f360b;
+  --color-primary-contrast: #f4e4ba;
+  --color-secondary: #0c1b33;
+  --color-secondary-contrast: #d9fff8;
+  --color-warning: #e2c044;
+  --color-warning-contrast: #0f360b;
+  --color-danger: #a50104;
+  --color-danger-contrast: #d9fff8;
 }
 
-
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    border: 1px solid #ff000055;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* border: 1px solid yellow; */
 }
 
 body {
-    font-family: Raleway;
+  font-family: Raleway;
 }
 
 .wrapper {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
-.container {
-    display: flex;
+.myContainer {
+  display: flex;
+  align-items: center;
 }
 
 .centered {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .vertical {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .horizontal {
-    flex-direction: row;
-    flex-wrap: wrap;
+  flex-direction: row !important;
+  flex-wrap: wrap;
 }
 
 .fullY {
-    height: 100vh;
+  height: 100vh;
 }
 
 .fullX {
-    width: 100vw;
+  width: 100vw;
 }
 
 .button {
-    padding: 10px;
-    margin: 20px;
-    border-radius: 5px;
-    background-color: var(--color-secondary);
-    color: var(--color-secondary-contrast);
-    box-shadow: inset 0px 0px var(--color-secondary-contrast);
-    transition: 0.3s;
-    cursor: pointer;
-    font-weight: bold;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+  background-color: var(--color-secondary-contrast);
+  color: var(--color-secondary);
+  box-shadow: inset 0px 0px var(--color-secondary);
+  transition: 0.3s;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
 }
 
 .button:hover {
-    background-color: var(--color-secondary-contrast);
-    color: var(--color-secondary);
-    box-shadow: inset 100px 0px var(--color-secondary-contrast);
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-contrast);
+  box-shadow: inset 0px -60px var(--color-secondary);
 }
 
+.playButton {
+  font-size: 1.4rem;
+}
+
+.backButton {
+  padding: 5px;
+  font-size: 2rem;
+  background-color: var(--color-danger-contrast);
+  color: var(--color-danger);
+  box-shadow: inset 0px 0px var(--color-danger);
+}
+.backButton:hover {
+  color: var(--color-danger-contrast);
+  box-shadow: inset 0px -60px var(--color-danger);
+}
 h2 {
-    margin: 20px 0px;
+  margin: 20px 0px;
 }
 
 h3 {
-    margin: 10px 0px;
+  margin: 10px 0px;
+}
+
+select {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+option:hover {
+  background-color: var(--color-secondary);
+}
+form {
+  margin: 20px;
 }
 
 li {
-    margin: 0px 20px;
+  margin: 0px 20px;
 }
 
 p {
-    margin: 5px 0px;
+  margin: 5px 0px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6vw;
+  margin: 5px;
+  min-width: 50px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.name {
+  font-size: 1.3rem;
+}
+
+.board {
+  background: rgb(3, 110, 1);
+  background: radial-gradient(
+    circle,
+    rgba(3, 110, 1, 1) 0%,
+    rgb(0, 63, 10) 80%
+  );
+  background-image: url("../img/tapete.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--color-danger-contrast);
+}
+
+.board {
+  color: var(--color-primary-contrast);
+}
+
+.deck {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: min-content;
+  width: 33vw;
+}
+
+.triumph {
+  position: absolute;
+  width: min-content;
+  left: 50%;
+  right: 50%;
+  transform: rotate(90deg) translateY(20vw);
+}
+
+.piledDecker {
+  top: 0;
+  bottom: 0;
+  width: min-content;
+}
+
+.savedDeck {
+  transform: rotate(-10deg);
+  margin: 0px 30px;
+}
+
+.mainDeck {
+  transform: translateX(-25vw);
+}
+
+.piledDeck div {
+  position: absolute;
+}
+
+.piledDeck div:nth-child(2n) {
+  transform: translateY(-2px);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.piledDeck div:nth-child(8n) {
+  transform: translateY(-4px) rotate(5deg);
+  z-index: 11;
+}
+
+.piledDeck div:nth-child(12n) {
+  transform: translateY(-6px) rotate(-2deg);
+  z-index: 12;
+}
+
+.piledDeck div:nth-child(16n) {
+  transform: translateY(-8px) rotate (3deg);
+  z-index: 13;
+}
+
+.piledDeck div:nth-child(20n) {
+  transform: translateY(-10px) rotate(-1deg);
+  z-index: 14;
+}
+
+.piledDeck div:nth-child(24n) {
+  transform: translateY(-12px) rotate(2deg);
+  z-index: 15;
+}
+
+.piledDeck div:nth-child(28n) {
+  transform: translateY(-14px) rotate(-3deg);
+  z-index: 16;
+}
+
+.piledDeck div:nth-child(32n) {
+  transform: translateY(-16px) rotate(3deg);
+  z-index: 17;
+}
+
+.piledDeck div:nth-child(36n) {
+  transform: translateY(-18px) rotate(-1deg);
+  z-index: 18;
+}
+
+.player0,
+.player1,
+.player2,
+.player3 {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 120px;
+}
+
+.player0 {
+  bottom: 4vh;
+  right: 37vw;
+  z-index: 100;
+}
+
+.player1 {
+  left: -8vw;
+  bottom: 45vh;
+  transform: rotate(90deg);
+}
+
+.player2 {
+  top: 4vh;
+  left: 37vw;
+  transform: rotate(180deg);
+}
+
+.player3 {
+  right: -8vw;
+  top: 45vh;
+  transform: rotate(270deg);
+}
+
+.player0Name {
+  position: absolute;
+  bottom: 1vh;
+}
+.player1Name {
+  position: absolute;
+  transform: rotate(90deg);
+  left: 0.1vw;
+}
+.player2Name {
+  position: absolute;
+  top: 1vh;
+}
+.player3Name {
+  position: absolute;
+  transform: rotate(-90deg);
+  right: 0.1vw;
+}
+
+.clickable img {
+  transition: 0.3s ease-in-out;
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+}
+
+.clickable img:hover {
+  transform: translateY(-20px) translateZ(100px) rotate(-2deg) scale(1.4);
+  filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.5));
+  z-index: 1000;
+}
+
+.handDeck {
+  justify-content: flex-start;
+  position: absolute;
+  left: 0%;
+  transform: translateX(45vw);
+  z-index: 1;
+}
+
+.instructions {
+  padding: 20px;
+}
+
+.inGameButtons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 35vw;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.inGameButtons button {
+  margin: 5px;
+}
+
+.dealer {
+  width: 30px;
+  margin: 20px;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+}
+
+.triumphInfo {
+  position: absolute;
+  top: 5vh;
+  left: 4vw;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #000;
+  width: 4vw;
+  min-width: 25px;
+}
+
+.winner {
+  position: absolute;
+  transform: translateY(15vh);
+}
+
+.playerPoints {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0px;
+  height: 17vh;
+}
+
+.playerPoints p {
+  padding: 0px 10px;
+  margin: 0px;
+  text-align: center;
+}
+
+.playerPoints .points {
+  font-size: 1.5rem;
+}
+
+.playerPoints .vertical {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  width: 200px;
+}
+
+.playerPoints div {
+  margin-left: -3%;
+}
+
+.playerPoints div.card {
+  width: 5vw;
+  box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.finalWinner {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* *************** CONFETTI *********************** */
+.confetti-container {
+  user-select: none;
+  z-index: 10;
+}
+
+.confetti {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.confetti .circle {
+  background-color: var(--bg);
+  border-radius: 50%;
+  box-shadow: 1px 20px 20px #0008;
+  height: 1rem;
+  position: relative;
+  width: 13px;
+  opacity: 60%;
+}
+
+.confetti div {
+  animation-duration: calc(70s / var(--speed));
+  animation-iteration-count: infinite;
+  animation-name: confetti;
+  animation-timing-function: linear;
+}
+
+@keyframes confetti {
+  0% {
+    transform: translateY(-100vh);
+  }
+
+  100% {
+    transform: translateY(100vh);
+  }
+}
+/* ********************************************** */
+
+@media only screen and (max-width: 1300px) {
+  .player1Name {
+    left: -1vw;
+  }
+  .player3Name {
+    right: -1vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .player1Name,
+  .player3Name {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .inGameButtons .playButton {
+    font-size: 1rem;
+  }
+  .board {
+    background-image: url("../img/tapete-vertical.png");
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .card {
+    min-width: 40px;
+  }
+  .player0 {
+    bottom: 4vh;
+    right: 50%;
+    left: 50%;
+  }
+  .player1 {
+    left: -8vw;
+    top: 50%;
+    bottom: 50%;
+  }
+  .player2 {
+    top: 4vh;
+    left: 18%;
+    right: 50%;
+  }
+  .player3 {
+    right: -8vw;
+    top: 30%;
+    bottom: 50%;
+  }
 }
