@@ -6,7 +6,7 @@
 
 Ejercicio final de curso de la asignatura de Programación en Java y JSP.
 
-![image](https://user-images.githubusercontent.com/101201349/231456513-f12d3872-0319-4189-9bd0-7fc2b3775d72.png)
+![menu](https://user-images.githubusercontent.com/101201349/231456513-f12d3872-0319-4189-9bd0-7fc2b3775d72.png)
 
 ## Visión general 👀
 
@@ -51,23 +51,21 @@ docker run -it -p 8081:8080 jumangum/brisca
 Ahora, abre tu navegador web y escribe la dirección URL: http://localhost:8081/brisca
 
 ## Galería de imágenes
-![image](https://user-images.githubusercontent.com/101201349/231456744-6256b5a5-2c4e-46d9-bd30-a945b68652eb.png)
-![image](https://user-images.githubusercontent.com/101201349/231456576-8f40778b-ca48-44c6-88dc-183e72deffa5.png)
-![image](https://user-images.githubusercontent.com/101201349/231456615-30898eaa-b799-4284-97fb-1334e485655b.png)
-![image](https://user-images.githubusercontent.com/101201349/231456664-6e9ad37f-f762-442b-abfb-6dd2e8adbd41.png)
-![image](https://user-images.githubusercontent.com/101201349/231456707-247eb3c4-1555-41e8-a0db-1442a28ba783.png)
+![image-1](https://user-images.githubusercontent.com/101201349/231456744-6256b5a5-2c4e-46d9-bd30-a945b68652eb.png)
+![image-2](https://user-images.githubusercontent.com/101201349/231456576-8f40778b-ca48-44c6-88dc-183e72deffa5.png)
+![image-3](https://user-images.githubusercontent.com/101201349/231456615-30898eaa-b799-4284-97fb-1334e485655b.png)
+![image-4](https://user-images.githubusercontent.com/101201349/231456664-6e9ad37f-f762-442b-abfb-6dd2e8adbd41.png)
+![image-5](https://user-images.githubusercontent.com/101201349/231456707-247eb3c4-1555-41e8-a0db-1442a28ba783.png)
 
 
-## Lenguajes empleados:
-
-<img src="https://img.shields.io/badge/-HTML5-014267?logo=html5&style=for-the-badge"> <img src="https://img.shields.io/badge/-CSS3-014267?logo=css3&style=for-the-badge"> <img src="https://img.shields.io/badge/-Java-014267?style=for-the-badge"> <img src="https://img.shields.io/badge/-JSP-014267?style=for-the-badge"> 
-
+## Lenguajes empleados
+![HTML 5](https://img.shields.io/badge/-HTML5-014267?logo=html5&style=for-the-badge)
+![CSS 3](https://img.shields.io/badge/-CSS3-014267?logo=css3&style=for-the-badge)
+![Java](https://img.shields.io/badge/-Java-014267?style=for-the-badge)
+![JSP](https://img.shields.io/badge/-JSP-014267?style=for-the-badge)
 
 ## Construido con 🛠️
-
-<img src="https://img.shields.io/badge/-Visual Studio Code-0273b4?logo=visualstudiocode&style=for-the-badge">
-
-
+![Visual Studio Code](https://img.shields.io/badge/-Visual Studio Code-0273b4?logo=visualstudiocode&style=for-the-badge)
 
 ## Autor ✒️
 
