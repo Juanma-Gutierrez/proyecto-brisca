@@ -28,27 +28,42 @@ Realizar en Java y JSP un juego de cartas a elección del alumno.
 - Al final de la partida se muestran las cartas ganadas por cada jugador, los puntos que han obtenido cada uno de ellos y el ganador de la partida.
 
 ## Comenzando 🚀
-El juego está listo para poder ser ejecutado, ya que está disponible en docker hub: https://hub.docker.com/repository/docker/jumangum/brisca/general
+El juego está listo para poder ser ejecutado, ya que está **disponible en Docker Hub**: [jumangun/brisca](https://hub.docker.com/r/jumangum/brisca).
 
-### Requisitos
-Para ejecutar este proyecto, necesitas Docker instalado en tu sistema.
+## Requisitos
+Para ejecutar este proyecto, será necesario tener **Docker instalado** en tu sistema.
 
-### Configuración
-Para configurar el proyecto, descarga la última versión del proyecto desde el repositorio:
+## Configuración
+Hay 2 formas posibles de usar este proyecto:
+1. Descargando la imagen que se encuentra publicada en Docker Hub.
+2. Construyendo la imagen localmente usando el *Dockerfile* de este repositorio.
+
+### 01: Docker Hub
+Simplemente descarga la última versión de la imagen del proyecto:
 ```
 docker pull jumangum/brisca
 ```
-### Ejecución
-Una vez descargado, construye la imagen de Docker con el siguiente comando en la terminal:
+
+### 02: Dockerfile
+Usando el fichero *Dockerfile* proporcionado, ejecuta el siguiente comando:
 ```
-docker build -t jumangum/brisca
+docker build -t
 ```
 
-Una vez construida la imagen, ejecuta el contenedor con el siguiente comando:
+> **Note**  
+> Ejecuta el comando en la misma ruta del *Dockerfile*.
+
+
+## Ejecución
+Una vez descargada/construida la imagen, levanta un contenedor con el siguiente comando:
 ```
-docker run -it -p 8081:8080 jumangum/brisca
+docker run --rm -it -p 8081:8080 jumangum/brisca
 ```
-Ahora, abre tu navegador web y escribe la dirección URL: http://localhost:8081/brisca
+
+Finalmente, podrás acceder al ejercicio mediante el siguiente enlace: http://localhost:8081/brisca
+
+> **Warning**  
+> Recuerda cambiar el mapeo de puertos si pretendes levantar varios contenedores distintos.
 
 ## Galería de imágenes
 ![image-1](https://user-images.githubusercontent.com/101201349/231456744-6256b5a5-2c4e-46d9-bd30-a945b68652eb.png)
