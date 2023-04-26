@@ -8,15 +8,6 @@ Ejercicio final de curso de la asignatura de Programación en Java y JSP.
 
 ![image](https://user-images.githubusercontent.com/101201349/231456513-f12d3872-0319-4189-9bd0-7fc2b3775d72.png)
 
-## Índice
-1. [Visión general](#visión-general-)
-2. [Especificaciones](#especificaciones-)
-3. [Comenzando](#comenzando-)
-4. [Galería de imágenes](#galería-de-imágenes)
-4. [Lenguajes empleados](#lenguajes-empleados)
-5. [Construido con](#construido-con-%EF%B8%8F)
-6. [Autor](#autor-%EF%B8%8F)
-
 ## Visión general 👀
 
 Realizar en Java y JSP un juego de cartas a elección del alumno.
