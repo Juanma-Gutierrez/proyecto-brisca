@@ -1,25 +1,23 @@
-# Juego de la Brisca
+# Juego de *La Brisca*
 
 ## Proyecto final de Programación: HTML, CSS, Java y JSP
-### Grado Superior en Desarrollo de Aplicaciones Multiplataforma
-### 1º de Programación 🧰
+Este repositorio contiene el **proyecto final** de la asignatura de Programación en Java y JSP del **Grado Superior de Desarrollo de Aplicaciones Multiplataforma**.
 
-Ejercicio final de curso de la asignatura de Programación en Java y JSP.
+![demo](https://user-images.githubusercontent.com/101201349/231456615-30898eaa-b799-4284-97fb-1334e485655b.png)
 
-![menu](https://user-images.githubusercontent.com/101201349/231456513-f12d3872-0319-4189-9bd0-7fc2b3775d72.png)
 
-## Visión general 👀
-
+# 👀 Visión general
 Realizar en Java y JSP un juego de cartas a elección del alumno.
 
-## Especificaciones ⚙
+
+# ⚙️ Especificaciones
 - Realizar un pequeño juego de cartas en JSP.
 - La temática corre de tu imaginación, no te compliques mucho en el juego.
 - El juego debe tener una pantalla inicial donde se avanzará al juego en sí.
 - El juego debe poder reiniciarse.
-- Utiliza las cartas que te suministró el profesor en clase.
+- Utiliza las cartas que te suministró el profesor en clase ([visibles aquí](https://github.com/15Galan/proyecto-brisca/tree/main/target/brisca/assets/img/deck)).
 
-### Información sobre el juego realizado
+## Información sobre el juego realizado
 - El juego es para un jugador contra el ordenador.
 - Puede escoger jugar contra dos, tres o cuatro jugadores.
 - Desde el inicio, se muestra en la parte superior izquierda el palo del triunfo de la partida.
@@ -27,7 +25,8 @@ Realizar en Java y JSP un juego de cartas a elección del alumno.
 - Tras cada mano, se muestra quién es el jugador que gana dicha mano.
 - Al final de la partida se muestran las cartas ganadas por cada jugador, los puntos que han obtenido cada uno de ellos y el ganador de la partida.
 
-## Comenzando 🚀
+
+# 🚀 Comenzando
 El juego está listo para poder ser ejecutado, ya que está **disponible en Docker Hub**: [jumangun/brisca](https://hub.docker.com/r/jumangum/brisca).
 
 ## Requisitos
@@ -65,13 +64,16 @@ Finalmente, podrás acceder al ejercicio mediante el siguiente enlace: http://lo
 > **Warning**  
 > Recuerda cambiar el mapeo de puertos si pretendes levantar varios contenedores distintos.
 
-## Galería de imágenes
-![image-1](https://user-images.githubusercontent.com/101201349/231456744-6256b5a5-2c4e-46d9-bd30-a945b68652eb.png)
-![image-2](https://user-images.githubusercontent.com/101201349/231456576-8f40778b-ca48-44c6-88dc-183e72deffa5.png)
-![image-3](https://user-images.githubusercontent.com/101201349/231456615-30898eaa-b799-4284-97fb-1334e485655b.png)
-![image-4](https://user-images.githubusercontent.com/101201349/231456664-6e9ad37f-f762-442b-abfb-6dd2e8adbd41.png)
-![image-5](https://user-images.githubusercontent.com/101201349/231456707-247eb3c4-1555-41e8-a0db-1442a28ba783.png)
 
+# 📷 Galería de imágenes
+![menu](https://user-images.githubusercontent.com/101201349/231456513-f12d3872-0319-4189-9bd0-7fc2b3775d72.png)
+![instrucciones](https://user-images.githubusercontent.com/101201349/231456744-6256b5a5-2c4e-46d9-bd30-a945b68652eb.png)
+![partida-2](https://user-images.githubusercontent.com/101201349/231456576-8f40778b-ca48-44c6-88dc-183e72deffa5.png)
+![partida-3](https://user-images.githubusercontent.com/101201349/231456664-6e9ad37f-f762-442b-abfb-6dd2e8adbd41.png)
+![final](https://user-images.githubusercontent.com/101201349/231456707-247eb3c4-1555-41e8-a0db-1442a28ba783.png)
+
+
+# 🛠️ Desarrollo
 
 ## Lenguajes empleados
 ![HTML 5](https://img.shields.io/badge/-HTML5-014267?logo=html5&style=for-the-badge)
@@ -79,9 +81,9 @@ Finalmente, podrás acceder al ejercicio mediante el siguiente enlace: http://lo
 ![Java](https://img.shields.io/badge/-Java-014267?style=for-the-badge)
 ![JSP](https://img.shields.io/badge/-JSP-014267?style=for-the-badge)
 
-## Construido con 🛠️
+## Herramientas 
 ![Visual Studio Code](https://img.shields.io/badge/-Visual Studio Code-0273b4?logo=visualstudiocode&style=for-the-badge)
 
-## Autor ✒️
+## Autor
+- **Juanma Gutiérrez** - [Juanma-Gutierrez](https://github.com/Juanma-Gutierrez)
 
--   **Juanma Gutiérrez** - [Juanma-Gutierrez](https://github.com/Juanma-Gutierrez)
