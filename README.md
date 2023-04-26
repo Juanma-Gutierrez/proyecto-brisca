@@ -82,7 +82,7 @@ Finalmente, podrás acceder al ejercicio mediante el siguiente enlace: http://lo
 ![JSP](https://img.shields.io/badge/-JSP-014267?style=for-the-badge)
 
 ## Herramientas 
-![Visual Studio Code](https://img.shields.io/badge/-Visual Studio Code-0273b4?logo=visualstudiocode&style=for-the-badge)
+![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-0273b4?logo=visualstudiocode&style=for-the-badge)
 
 ## Autor
 - **Juanma Gutiérrez** - [Juanma-Gutierrez](https://github.com/Juanma-Gutierrez)
