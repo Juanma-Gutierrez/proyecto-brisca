@@ -15,7 +15,7 @@ Realizar en Java y JSP un juego de cartas a elección del alumno.
 - La temática corre de tu imaginación, no te compliques mucho en el juego.
 - El juego debe tener una pantalla inicial donde se avanzará al juego en sí.
 - El juego debe poder reiniciarse.
-- Utiliza las cartas que te suministró el profesor en clase ([visibles aquí](https://github.com/15Galan/proyecto-brisca/tree/main/target/brisca/assets/img/deck)).
+- Utiliza las cartas que te suministró el profesor en clase ([visibles aquí](https://github.com/Juanma-Gutierrez/proyecto-brisca/tree/main/src/main/webapp/assets/img/deck)).
 
 ## Información sobre el juego realizado
 - El juego es para un jugador contra el ordenador.
