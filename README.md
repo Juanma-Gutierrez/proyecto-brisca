@@ -38,7 +38,7 @@ Hay 2 formas posibles de usar este proyecto:
 2. Construyendo la imagen localmente usando el *Dockerfile* de este repositorio.
 
 ### 01: Docker Hub
-Simplemente descarga la última versión de la imagen del proyecto:
+Descarga la última versión de la imagen del proyecto:
 ```
 docker pull jumangum/brisca
 ```
@@ -46,7 +46,7 @@ docker pull jumangum/brisca
 ### 02: Dockerfile
 Usando el fichero *Dockerfile* proporcionado, ejecuta el siguiente comando:
 ```
-docker build -t
+docker build -t jumangum/brisca .
 ```
 
 > **Note**  
@@ -56,7 +56,7 @@ docker build -t
 ## Ejecución
 Una vez descargada/construida la imagen, levanta un contenedor con el siguiente comando:
 ```
-docker run --rm -it -p 8081:8080 jumangum/brisca
+docker run --rm -p 8081:8080 jumangum/brisca
 ```
 
 Finalmente, podrás acceder al ejercicio mediante el siguiente enlace: http://localhost:8081/brisca
@@ -67,10 +67,11 @@ Finalmente, podrás acceder al ejercicio mediante el siguiente enlace: http://lo
 
 # 📷 Galería de imágenes
 ![menu](https://user-images.githubusercontent.com/101201349/231456513-f12d3872-0319-4189-9bd0-7fc2b3775d72.png)
-![instrucciones](https://user-images.githubusercontent.com/101201349/231456744-6256b5a5-2c4e-46d9-bd30-a945b68652eb.png)
+![partida-1](https://user-images.githubusercontent.com/101201349/236403793-6394205c-ca88-42be-b9fa-2a25038c0047.png)
 ![partida-2](https://user-images.githubusercontent.com/101201349/231456576-8f40778b-ca48-44c6-88dc-183e72deffa5.png)
 ![partida-3](https://user-images.githubusercontent.com/101201349/231456664-6e9ad37f-f762-442b-abfb-6dd2e8adbd41.png)
 ![final](https://user-images.githubusercontent.com/101201349/231456707-247eb3c4-1555-41e8-a0db-1442a28ba783.png)
+![instrucciones](https://user-images.githubusercontent.com/101201349/231456744-6256b5a5-2c4e-46d9-bd30-a945b68652eb.png)
 
 
 # 🛠️ Desarrollo
