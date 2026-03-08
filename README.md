@@ -38,22 +38,12 @@ Hay 2 formas posibles de usar este proyecto:
 2. Construyendo la imagen localmente usando el *Dockerfile* de este repositorio.
 
 ### 01: Docker Hub
-Descargar la última versión de la imagen del proyecto:
+Descargar la última versión de la imagen del proyecto subida al repositorio de [DockerHub](https://hub.docker.com/).
 ```
 docker pull jumangum/brisca
 ```
 
-### 02: Dockerfile
-Usando el fichero *Dockerfile* proporcionado, ejecutar el siguiente comando:
-```
-docker build -t jumangum/brisca .
-```
-
-> **Note**
-> Ejecutar el comando en la misma ruta del *Dockerfile*.
-
-
-## Ejecución
+### 02: Ejecución
 Una vez descargada/construida la imagen, levantar un contenedor temporal con el siguiente comando:
 ```
 docker run --rm -p 80:8080 jumangum/brisca
